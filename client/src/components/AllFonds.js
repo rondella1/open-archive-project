@@ -28,7 +28,7 @@ const AllFonds = () => {
             {allFonds.map((fonds) => {
                 return (
                     <FondsBox key={fonds._id}>
-                        <FondsLink to ={`/fonds/${fonds.name}`}> Fonds {fonds._id} - {fonds.name}</FondsLink>
+                        <h3><FondsLink to ={`/fonds/${fonds.name}`}> Fonds {fonds._id} - {fonds.name}</FondsLink></h3>
                         <p>Repository: <RepoLink to={`/institutions/${fonds.repository}`}>{fonds.repository}</RepoLink></p>                       
                         <Description>{fonds.description}</Description>
                         <RelatedLinks to={`/related-records/${fonds._id}`}>

@@ -54,7 +54,7 @@ const DetailsBox = styled.div`
     margin-bottom: 20px;
 `;
 
-const Name = styled.h2`
+const Name = styled.h3`
     margin-bottom: 8px;
 `;
 
