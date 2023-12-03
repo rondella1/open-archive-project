@@ -67,7 +67,7 @@ const SavedItems = () => {
         <Title>Bookmarked Items</Title>
         <Wrapper>
         {items.length === 0 && (
-          <div>{noItems}</div>
+          <NoItems>{noItems}</NoItems>
         )}
         {items.map((item) => (
           <ItemBox key={item._id}>
@@ -92,10 +92,15 @@ const SavedItems = () => {
             )}
           </ItemBox>
         ))}
+          <ContinueBrowsing to="/">Continue browsing</ContinueBrowsing>
       </Wrapper>
       </>
       );
 }
+
+const NoItems = styled.div`
+  padding-bottom: 20px;
+`
 
 const FondsLink = styled(Link)`
   color:slategray;
@@ -161,4 +166,12 @@ const RemoveButton = styled.button`
       }
 `;
 
+const ContinueBrowsing = styled(Link)`
+    text-decoration: none;
+    text-align: left;
+    color:slategray;
+      &:hover {
+        color: darkslategrey
+      }
+`
 export default SavedItems;

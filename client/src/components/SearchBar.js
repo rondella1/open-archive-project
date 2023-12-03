@@ -49,7 +49,7 @@ const SearchBar = () => {
                 </SearchLink>
             </StyledSearchBar>
             <StarLink to="/saved-items">
-                <BookmarkLogo src={bookmark} alt="Bookmark Logo"></BookmarkLogo>
+                <BookmarkLogo src={bookmark} alt="Bookmark Logo" title="Bookmarked Items"></BookmarkLogo>
             </StarLink>
             <LoginButton to={'/login'}>Login</LoginButton>
         </Wrapper>
