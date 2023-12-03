@@ -1,0 +1,12 @@
+[
+    {
+        "_id": "01",
+        "name": "Montreal Public Library Archives",
+        "address": "1823 Queen Mary Road",
+        "telephone":"514-983-2113",
+        "archvist": "Veronica Della Foresta",
+        "email": "mpl-archives@mla.org", 
+        "description": "Municipal Archives housing collections that trace the history of the city and its communities.", 
+        "password": "mpla1823"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "016731",
+        "title": "Rita Briansky in her studio, taken by friend Gaby",
+        "date": "197-?",
+        "format": "Graphic material",
+        "tags": ["Painting"], 
+        "institutionId": "01", 
+        "repository": "Montreal Public Library Archives",
+        "fondsId": "01673",
+        "fondsName": "Rita Briansky Fonds",
+        "imgSrc": "https://asset.cloudinary.com/dzhdlfmkp/291b714cfe571d2d8aed087ceee7101f"
+    }, 
+    {
+        "_id": "018931",
+        "title": "Scene of Maurice Zbriger conducting outdoor concert, possibly Parc La Fontaine",
+        "date": "1969",
+        "format": "Graphic material",
+        "tags": ["Parc La Fontaine"], 
+        "institutionId": "01", 
+        "repository": "Montreal Public Library Archives",
+        "fondsId": "01893",
+        "fondsName": "Maurice Zbriger Fonds",
+        "imgSrc": "https://asset.cloudinary.com/dzhdlfmkp/294f2f5c27207c7bd5cdeef1bf618b60"
+    },  
+    {
+        "_id": "016732",
+        "title": "Interior self-portrait. Rita Briansky shot with painted self-portrait, Parc Avenue, Montreal",
+        "date": "1942",
+        "format": "Graphic material",
+        "tags": ["Portraiture", "Parc Avenue"], 
+        "institutionId": "01", 
+        "repository": "Montreal Public Library Archives",
+        "fondsId": "01673",
+        "fondsName": "Rita Briansky Fonds",
+        "imgSrc": "https://asset.cloudinary.com/dzhdlfmkp/ae47020b3716a84d4ff54be7b23aeab9"
+    },  
+    {
+        "_id": "018932",
+        "title": "Maurice Zbriger as a teenager, posed with violin",
+        "date": "191-?",
+        "format": "Graphic material",
+        "tags": ["Portraiture", "Violins"], 
+        "institutionId": "01", 
+        "repository": "Montreal Public Library Archives",
+        "fondsId": "01893",
+        "fondsName": "Maurice Zbriger Fonds",
+        "imgSrc": "https://asset.cloudinary.com/dzhdlfmkp/c8e9bb2a6c8ab3e6bea978ee9dd19def"
+    }
+]
