@@ -4,6 +4,8 @@ import { useState } from "react";
 import searchImage from "../assets/magnifying-glass-icon.png";
 import { Link } from "react-router-dom";
 
+//Searchbar for logged in users
+
 const InstitutionSearchBar = () => {
     const { institutionName } = useParams();
     const [searchTerm, setSearchTerm] = useState("");

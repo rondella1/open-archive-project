@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import SearchBar from "./SearchBar";
 
+//this component is the homepage of a given institution 
+
 const GuestInstitutionHome = () => {
     const { institutionName } = useParams();
     const [institutionData, setInstitutionData] = useState(null);

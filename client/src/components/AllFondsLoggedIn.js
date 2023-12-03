@@ -3,28 +3,30 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//This component retrieves all the fonds of a logged in institution
+
 const AllFondsLoggedIn = () => {
     const { institutionName } = useParams();
     const [allFonds, setAllFonds] = useState([]);
     const isLoggedIn = localStorage.getItem('institutionName');
-    const [expandDescription, setExpandDescription] = useState([]);
+    const [expandDescription, setExpandDescription] = useState([]); 
     const [expandBiosketch, setExpandBiosketch] = useState([]);
 
+
+    //this function expands the Description section upon click 
     const handleExpandDescription = (fondsId) => {
         setExpandDescription((prev) =>
             prev.includes(fondsId) ? prev.filter((id) => id !== fondsId) : [...prev, fondsId]
         );
     };
 
-    const handleExpandBiosketch = (fondsId) => {
-        setExpandBiosketch((prev) => 
-        prev.includes(fondsId) ? prev.filter((id) => id !== fondsId) : [...prev, fondsId])
-    };
 
+    //this function clears local storage when the user logs out
     const handleLogOut = () => {
         localStorage.removeItem('institutionName');
     }
 
+    //this useEffect retrieves a given institution's fonds
     useEffect(() => {
         fetch(`http://localhost:3000/${institutionName}/fonds`)
         .then(response => response.json())
@@ -32,6 +34,7 @@ const AllFondsLoggedIn = () => {
         .catch(error => console.error(error))
    }, [])
 
+   //this http request deletes a fonds on click 
    const handleDelete = async (fondsName) => {
         fetch (`http://localhost:3000/${institutionName}/fonds`, {
             method: "DELETE", 

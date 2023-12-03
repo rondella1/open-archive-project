@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 import { ToastContainer, toast } from "react-toastify";
 
+//Component that allows logged in users to upload a fonds to their institutional repository, and add the fonds to the database upon upload
+
 const UploadFonds = () => {
     const { institutionName } = useParams();
     const [fondsId, setFondsId] = useState('');

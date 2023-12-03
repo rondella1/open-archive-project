@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 import { ToastContainer, toast } from "react-toastify";
 
+//Component that retrieves details of a given record by its ID
 
 const RecordPage = () => {
     const { recordId } = useParams();
@@ -32,6 +33,7 @@ const RecordPage = () => {
         });
     }, [recordId]);
 
+    //function that adds record to user's Bookmarked Items list
     const addToSavedItems = async () => {
         setSaved([...saved, record]);
     

@@ -5,6 +5,8 @@ import styled from "styled-components";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 import SearchBar from "./SearchBar";
 
+//this component returns a logged in institution's details based on its name 
+
 const InstitutionHome = () => {
     const { institutionName } = useParams();
     const [institutionData, setInstitutionData] = useState(null);

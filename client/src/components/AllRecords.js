@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
+//This component retrieves all the fonds registered in the database
+
 const AllRecords = () => {
     const [allRecords, setAllRecords] = useState([]);
 

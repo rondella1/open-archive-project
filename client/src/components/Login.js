@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import styled from "styled-components";
 
+//Log In page that sets local storage if log in is successful
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

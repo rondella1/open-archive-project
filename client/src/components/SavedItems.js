@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 
+//Component that retrieves all the bookmarked items from the database
+
 const SavedItems = () => {
     const [items, setItems] = useState([]);
     const [noItems, setNoItems] = useState("You have no items bookmarked.");
 
+    //function that clears all the items from the Bookmarked Items list when the user closes the web app
     useEffect(() => {
         fetchSavedItems();
         window.addEventListener('beforeunload', clearSavedItemsOnUnload);

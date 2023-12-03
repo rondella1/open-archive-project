@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 import { ToastContainer, toast } from "react-toastify";
 
+//This component retrieves the details and image associated with a given fonds by its name
+
 const FondsPage = () => {
     const { fondsName } = useParams();
     const [fonds, setFonds] = useState(null);
@@ -28,6 +30,7 @@ const FondsPage = () => {
         })
     }, [fondsName])
 
+    //this function adds the fonds to a user's bookmarked items page 
     const addToSavedItems = async () => {
         setSaved([...saved, fonds]);
     

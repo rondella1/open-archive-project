@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
+//This component retrieves all the fonds stored in the database and displays a summary of their contents
+
 const AllFonds = () => {
-    const navigate = useNavigate();
     const [allFonds, setAllFonds] = useState([]);
-    // const isLoggedIn = localStorage.getItem('institutionName');
 
     useEffect(() => {
         fetch("http://localhost:3000/fonds")

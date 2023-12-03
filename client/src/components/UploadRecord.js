@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//Component that allows logged in users to upload a record to their institutional repository, and add the record to the database upon upload
+
 const UploadRecord = () => {
     const { institutionName } = useParams();
     const [title, setTitle] = useState('');

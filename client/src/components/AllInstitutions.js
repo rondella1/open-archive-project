@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
+//this component retrieves all the registered institutions in the database 
+
 const AllInstitutions = () => {
-    const navigate = useNavigate();
     const [allInstitutions, setAllInstitutions] = useState([]);
 
     useEffect(()=> {

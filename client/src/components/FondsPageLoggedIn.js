@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//This component retrieves all the fonds of a logged in institution by fonds name.
+
 const FondsPageLoggedIn = () => {
     const { institutionName, fondsName} = useParams();
     const [fonds, setFonds] = useState(null);

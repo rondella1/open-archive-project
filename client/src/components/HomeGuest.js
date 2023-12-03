@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import OALogo from "../assets/oa-logo.png";
 import SearchBar from "./SearchBar";
 
+//This component is the landing page of the App
+
 const HomeGuest = () => {
 
     return (

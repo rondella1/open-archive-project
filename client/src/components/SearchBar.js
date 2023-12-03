@@ -5,6 +5,8 @@ import searchImage from "../assets/magnifying-glass-icon.png";
 import { Link } from "react-router-dom";
 import bookmark from "../assets/bookmark-purple.svg"
 
+//Guest search bar
+
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);

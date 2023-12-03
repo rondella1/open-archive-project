@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
+//Results page generated according to guest's search query
+
 const SearchResults = () => {
     const navigate = useNavigate();
     const { query } = useParams();

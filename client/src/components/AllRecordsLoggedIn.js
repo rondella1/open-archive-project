@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//this component retrieves all the records of a logged in institution 
+
 const AllRecordsLoggedIn = () => {
     const { institutionName } = useParams();
     const [allRecords, setAllRecords] = useState([]);

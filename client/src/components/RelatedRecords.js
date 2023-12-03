@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
 
+//Component that retrieves all records associated with a specific fonds by its fonds ID.
+
 const RelatedRecords = () => {
     const { fondsId } = useParams();
     const [relatedRecords, setRelatedRecords] = useState([]);

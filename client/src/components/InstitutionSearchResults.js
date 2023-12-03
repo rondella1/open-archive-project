@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//Search results page of search query made by logged in users  
+
 const InstitutionSearchResults = () => {
     const navigate = useNavigate();
     const isLoggedIn = localStorage.getItem("institutionName");

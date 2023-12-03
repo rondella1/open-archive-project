@@ -5,12 +5,13 @@ import { ToastContainer, toast } from "react-toastify";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 
+//component that retrieves record details based on its fonds ID and record ID
+
 const RelatedRecordById = () => {
     const { fondsId, recordId } = useParams();
     const [record, setRecord] = useState(null);
     const [image, setImage] = useState(null);
     const [saved, setSaved] = useState([]);
-
 
     useEffect(() => {
         fetch(`http://localhost:3000/related-records/${fondsId}/${recordId}`)
@@ -32,6 +33,8 @@ const RelatedRecordById = () => {
         });
     }, [fondsId, recordId]);
 
+
+//function that adds items to the user's Bookmarked Items list
 const addToSavedItems = async () => {
     setSaved([...saved, record]);
 

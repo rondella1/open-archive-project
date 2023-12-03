@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import InstitutionSearchBar from "./InstitutionSearchBar";
 
+//Component that retrieves details of a logged in institution's given record by its record ID
+
 const RecordPageLoggedIn = () => {
     const { institutionName, recordId } = useParams();
     const [record, setRecord] = useState(null);
